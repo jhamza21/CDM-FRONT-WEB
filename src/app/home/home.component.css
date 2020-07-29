@@ -1,0 +1,27 @@
+
+h2{
+    font-size: 3em;
+    text-align: center;
+    font-family: verdana;
+    color: transparent;
+    background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0% 100%;
+    }
+    50%
+    {
+        background-position: 100% 0%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
+}

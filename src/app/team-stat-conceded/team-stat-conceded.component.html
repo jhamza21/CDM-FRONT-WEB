@@ -1,0 +1,21 @@
+
+	<div *ngIf="!exist" >No teams found.</div> 
+    <div  *ngIf="exist"  class="panel panel-primary">
+        <div class="panel-heading">
+          <h2>BEST DEFENSE</h2>
+        </div>
+        <div class="panel-body">
+          <table class="table table-striped" style="color: white;">
+            <tbody>   
+              <tr *ngFor="let t of teams | async">
+                <td> <li class="navbar-brand">
+                  <img src="../assets/flags/{{t.name}}.png"  width="30" height="30"  /></li>{{t.name}}</td>
+                           
+                <td> <li class="navbar-brand">
+                    {{t.goal_conceded}}</td>    
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      

@@ -1,0 +1,47 @@
+#madiv{
+  scrollbar-color:inherit;
+
+  height:440pt;
+  overflow:auto;
+ box-shadow: inset 10px 10px 10px  rgba(168, 155, 233, 0.3); ;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(33, 15, 109);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(36, 10, 150);
+  }
+#navv{
+
+font-weight: bold;
+text-transform: uppercase;
+
+}
+li{
+  margin-left: 1.5%;
+  
+}
+nav{
+border-bottom: solid;
+}
+.logo{
+font-size: 20px;
+font-family: verdana;
+color: transparent;
+background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+-webkit-background-clip: text;
+background-clip: text;
+animation: animate 20s linear infinite;
+background-size: 1000%;
+}

@@ -1,0 +1,106 @@
+
+
+<nav id="navv" class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav" id="nav">
+    <li class="navbar-brand"  routerLink="home">
+      <div class="logo"> <img src="../assets/img/cup.png"  width="30" height="30"  routerLink="home"  />
+      QATAR2022</div>
+    </li>
+  
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+       Team Management
+      </a>
+      <div class="dropdown-menu">
+        <a routerLink="allteams"  class="dropdown-item">Team List</a>
+        <a routerLink="addteam"  class="dropdown-item" >Add Team</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown" >
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+       Referee Management
+      </a>
+      <div class="dropdown-menu">
+        <a routerLink="allreferees"  class="dropdown-item">Referee List</a>
+        <a routerLink="addreferee"  class="dropdown-item" >Add Referee</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Group stage
+      </a>
+      <div class="dropdown-menu">
+        <a (click)="generer_pool()" class="dropdown-item" >Start</a>
+        <a routerLink="allpoules"  class="dropdown-item" >Groups</a>
+        <a routerLink="all"  class="dropdown-item">Matchs</a>
+
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Knockout stage
+      </a>
+      <div class="dropdown-menu">
+        <a (click)="generer_pool_p()"  class="dropdown-item" >Start</a>
+        <a routerLink="matchselim"  class="dropdown-item">Matchs</a>
+
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Quarter-finals
+      </a>
+      <div class="dropdown-menu">
+        <a (click)="generer_pool_g()"  class="dropdown-item" >Start</a>
+        <a routerLink="matchsquart"  class="dropdown-item">Matchs</a>
+
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Semi-finals
+      </a>
+      <div class="dropdown-menu">
+        <a (click)="generer_pool_s()"  class="dropdown-item" >Start</a>
+        <a routerLink="matchsdemi"  class="dropdown-item">Matchs</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+       Final
+      </a>
+      <div class="dropdown-menu">
+        <a (click)="generer_pool_f()"  class="dropdown-item" >Start</a>
+        <a routerLink="matchfinal"  class="dropdown-item">Match</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Statistics
+      </a>
+      <div class="dropdown-menu">
+        <a  routerLink="goalscored"  class="dropdown-item" >Best attack</a>
+        <a routerLink="goalconceded"  class="dropdown-item">Best Defense</a>
+      </div>
+    </li>
+
+  </ul>
+</nav>
+
+<div class="container">
+  <br><br>
+<div class="card" id="madiv">
+    <div class="card-body">
+
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<br>
+<footer class="footer">
+  <div class="container" style="color: white;">
+      <span>All Rights Reserved 2022 </span>
+  </div>
+</footer>

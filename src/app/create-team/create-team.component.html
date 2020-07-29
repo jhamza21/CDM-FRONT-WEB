@@ -1,0 +1,75 @@
+  
+  <div id="formulaire">
+	<h3 >CREATE TEAM </h3><h6> ({{32-nb}}  more teams)</h6>
+
+  <form (ngSubmit)="save()" ngNativeValidate>
+    <div class="form-group">
+	  <label for="name">Name</label>
+	  <select class="browser-default custom-select" id="name" 
+	  required [(ngModel)]="t.name" name="name">
+			  <option value="TUNISIA">TUNISIA</option>
+			  <option value="TURKEY">TURKEY</option>
+			  <option value="JAPAN">JAPAN</option>
+				  <option value="FRANCE">FRANCE</option>
+				  <option value="ITALY">ITALY</option>
+				  	<option value="GERMANY">GERMANY</option>
+				  <option value="RUSSIA">RUSSIA</option>
+				  <option value="KOREA">KOREA</option>
+				  <option value="ALGERIA">ALGERIA</option>
+				  	<option value="MOROCCO">MOROCCO</option>
+				  <option value="CHINA">CHINA</option>
+				  <option value="ARGENTINA">ARGENTINA</option>
+				  <option value="AUSTRALIA">AUSTRALIA</option>
+				  	<option value="BELGIUM">BELGIUM</option>
+				  <option value="BRAZIL">BRAZIL</option>
+				  <option value="CANADA">CANADA</option>
+				  <option value="CAMEROON">CAMEROON</option>
+				  	<option value="CHILE">CHILE</option>
+				  <option value="CHAD">CHAD</option>
+				  <option value="COLOMBIA">COLOMBIA</option>
+				  <option value="CROATIA">CROATIA</option>
+				  <option value="COSTA RICA">COSTA RICA</option>
+				  <option value="EGYPT">EGYPT</option>
+				  <option value="FINLAND">FINLAND</option>
+				  <option value="GABON">GABON</option>
+				  <option value="GHANA">GHANA</option>
+				  <option value="GREECE">GREECE</option>
+				  <option value="ICELAND">ICELAND</option>
+				  <option value="IVORY COAST">IVORY COAST</option>
+				  <option value="KUWAIT">KUWAIT</option>
+				  <option value="LUXEMBOURG">LUXEMBOURG</option>
+				  <option value="MALI">MALI</option>
+				  <option value="MEXICO">MEXICO</option>
+				  <option value="NETHERLANDS">NETHERLANDS</option>
+				  <option value="NEW ZEALAND">NEW ZEALAND</option>
+				  <option value="PALESTINE">PALESTINE</option>
+				  <option value="QATAR">QATAR</option>
+				  <option value="SPAIN">SPAIN</option>
+				  <option value="SWEDEN">SWEDEN</option>
+				  <option value="UKRAINE">UKRAINE</option>
+				  <option value="URUGUAY">URUGUAY</option>
+				  <option value="NIGERIA">NIGERIA</option>
+				  <option value="PORTUGAL">PORTUGAL</option>
+				  <option value="ROMANIA">ROMANIA</option>
+				  <option value="UNITED KINGDOM">UNITED KINGDOM</option>
+				  <option value="SENEGAL">SENEGAL</option>
+				  <option value="IRELAND">IRELAND</option>
+				  <option value="ECUADOR">ECUADOR</option>
+
+				  
+				  
+			</select>
+     </div>
+    <div class="form-group">
+      <label for="name">Number of Player</label>
+      <input type="number" min="0" class="form-control" id="nbrplayer" required [(ngModel)]="t.nbrplayer" name="nbrplayer">
+    </div>
+    <div class="form-group">
+      <label for="name">Number of Staff</label>
+      <input type="number" min="0" class="form-control" id="nbrstaff" required [(ngModel)]="t.nbrstaff" name="nbrstaff">
+    </div>
+	<button  style="width:35%" type="submit" class="btn btn-success">Submit</button>
+	<button style="margin-left: 118px;width:35%" (click)="list()" class="btn btn-primary pull-right">Back</button><br>
+
+  </form>
+</div>

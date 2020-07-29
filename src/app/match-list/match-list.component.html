@@ -1,0 +1,198 @@
+<div *ngIf="!exist" >No matchs found.</div>
+
+<div class="panel panel-primary" *ngIf="exist" >
+    <div class="panel-heading">
+      <h2>MATCHS LIST </h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP A</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i<6" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP B</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>5 && i<12" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+                <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP C</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>11 && i<18" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP D</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>17 && i<24" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP E</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>23 && i<30" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP F</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>29 && i<36" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP G</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>35 && i<42" >
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-striped" style="color: white;">
+        <legend>MATCHS GROUP H</legend>
+        <tbody *ngFor=" let m of matchs | async;  let i=index">
+         
+          <tr  *ngIf="i>41 && i<48" >
+           
+            <td width="150"><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[0].name}}.png"  width="30" height="30"  /></li>{{m.teams[0].name}}</td>
+           <td style="font-size: 25px;">{{m.scorea}}</td><td style="font-size: 25px;font-weight: bold;">-
+          </td><td style="font-size: 25px;">{{m.scoreb}}</td>
+           
+              <td><li class="navbar-brand">
+              <img src="../assets/flags/{{m.teams[1].name}}.png"  width="30" height="30"  /></li>{{m.teams[1].name}}</td>            
+
+            <td>
+                <button [disabled]="isUpdated(m)" (click)="updatematch(m.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="matchDetails(m.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

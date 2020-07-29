@@ -1,0 +1,21 @@
+<div *ngIf="!exist" >No referees found.</div>
+
+<div  *ngIf="exist" class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>REFEREE LIST</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped" style="color: white;">
+
+      <tbody>
+        <tr *ngFor="let rr of r| async">
+          <td>{{rr.name}}</td>
+          <td><button (click)="deleteReferee(rr.id)" class="btn btn-danger">Delete</button>
+            <button (click)="updateReferee(rr.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            <button (click)="RefereeDetails(rr.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

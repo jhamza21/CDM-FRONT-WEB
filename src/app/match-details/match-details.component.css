@@ -1,0 +1,24 @@
+h2{
+    text-align: center;
+}
+table{
+   
+    margin-left: 34%;
+    width: 400px; 
+    font-size: 21px;
+}
+#referee{
+    margin-top: 12%;
+    margin-left: 100%;
+    width: 400px; 
+    font-size: 21px;
+}
+img {
+    border-radius: 50%;
+  }
+
+  hr{
+      width: 80%;
+      
+    border-top: 3px solid blue;
+      }

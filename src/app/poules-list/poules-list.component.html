@@ -1,0 +1,266 @@
+<div *ngIf="!exist" >No groups found.</div>
+
+<div *ngIf="exist" class="panel panel-primary" >
+    <div class="panel-heading">
+      <h2>GROUPS LIST</h2>
+    </div>
+    <div class="panel-body">
+        <div *ngFor=" let p1 of p;  let i=index">
+        <table class="table table-striped" *ngIf="i==0" style="color: white;">
+          <legend>GROUP A</legend>
+        <tbody>
+          <tr>
+           <th>Team</th><th>Point</th>
+          </tr>
+          <tr>
+            <th><li class="navbar-brand">
+             <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+              {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+          </tr>
+          <tr> 
+            <th><li class="navbar-brand">
+             <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+          </tr>
+        <tr>
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+          </tr>
+        <tr>
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="panel-body">
+      <div *ngFor=" let p1 of p;  let i=index">
+      <table class="table table-striped" *ngIf="i==1" style="color: white;">
+        <legend>GROUP B</legend>
+        <tbody>
+          <tr>
+           <th>Team</th><th>Point</th>
+          </tr>
+          <tr>
+            <th><li class="navbar-brand">
+             <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+              {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+          </tr>
+          <tr> 
+            <th><li class="navbar-brand">
+             <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+          </tr>
+        <tr>
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+          </tr>
+        <tr>
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div class="panel-body">
+    <div *ngFor=" let p1 of p;  let i=index">
+    <table class="table table-striped" *ngIf="i==2" style="color: white;">
+      <legend>GROUP C</legend>
+      <tbody>
+        <tr>
+         <th>Team</th><th>Point</th>
+        </tr>
+        <tr>
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+            {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+        </tr>
+        <tr> 
+          <th><li class="navbar-brand">
+           <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+        </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+        </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div class="panel-body">
+  <div *ngFor=" let p1 of p;  let i=index">
+  <table class="table table-striped" *ngIf="i==3" style="color: white;">
+    <legend>GROUP D</legend>
+    <tbody>
+      <tr>
+       <th>Team</th><th>Point</th>
+      </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+      </tr>
+      <tr> 
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="panel-body">
+  <div *ngFor=" let p1 of p;  let i=index">
+  <table class="table table-striped" *ngIf="i==4" style="color: white;">
+    <legend>GROUP E</legend>
+    <tbody>
+      <tr>
+       <th>Team</th><th>Point</th>
+      </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+      </tr>
+      <tr> 
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="panel-body">
+  <div *ngFor=" let p1 of p;  let i=index">
+  <table class="table table-striped" *ngIf="i==5" style="color: white;">
+    <legend>GROUP F</legend>
+    <tbody>
+      <tr>
+       <th>Team</th><th>Point</th>
+      </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+      </tr>
+      <tr> 
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="panel-body">
+  <div *ngFor=" let p1 of p;  let i=index">
+  <table class="table table-striped" *ngIf="i==6" style="color: white;">
+    <legend>GROUP G</legend>
+
+    <tbody>
+      <tr>
+       <th>Team</th><th>Point</th>
+      </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+      </tr>
+      <tr> 
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="panel-body">
+  <div *ngFor=" let p1 of p;  let i=index">
+  <table class="table table-striped" *ngIf="i==7" style="color: white;">
+    <legend>GROUP H</legend>
+    <tbody>
+      <tr>
+       <th>Team</th><th>Point</th>
+      </tr>
+      <tr>
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[0].name}}.png"  width="30" height="30"  /></li>
+          {{p1.teams[0].name}}</th><td>{{p1.teams[0].point}}</td>
+      </tr>
+      <tr> 
+        <th><li class="navbar-brand">
+         <img src="../assets/flags/{{p1.teams[1].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[1].name}}</th> <td>{{p1.teams[1].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[2].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[2].name}}</th> <td>{{p1.teams[2].point}}</td>
+      </tr>
+    <tr>
+      <th><li class="navbar-brand">
+       <img src="../assets/flags/{{p1.teams[3].name}}.png"  width="30" height="30"  /></li>
+        {{p1.teams[3].name}}</th><td>{{p1.teams[3].point}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+  </div>
+  
+  

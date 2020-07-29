@@ -1,0 +1,12 @@
+#formulaire{
+    margin-top: 17%;
+    margin-left: 42%;
+    width: 400px; 
+    font-size: 21px;
+}
+img {
+    border-radius: 50%;
+  }
+  hr{
+    border-top: 2px solid blue;
+      }

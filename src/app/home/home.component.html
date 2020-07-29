@@ -1,0 +1,16 @@
+<div class="panel panel-primary">
+  
+    <div style="margin-left: 24%;"*ngIf="!win()" class="panel-body">
+      <h1 style="margin-left: 12%;">WELCOME TO QATAR</h1>
+<h3 style="margin-left: 18%;">FIFA WORLD CUP 2022</h3>
+<br>
+        <img src="../../assets/img/allflags.png" style="margin-left: 25px;"  width="500" height="440"    />
+    </div>
+    <div *ngIf="win()" class="panel-body"  (click)="toggle()">
+      <h2 >  CONGRATULATION {{winner}} </h2>
+    <br><img src="../../assets/flags/{{winner}}.png" style="margin-left: 30px;"  width="1000" height="400"   />
+</div>
+</div>
+  
+  
+  
